@@ -21,7 +21,7 @@ sudo apt install -y \
 npm install -g bun
 ```
 
-## Build DEB and AppImage
+## Build DEB
 
 ```bash
 cd /home/runner/work/openusage/openusage
@@ -29,10 +29,12 @@ bun install
 bun run build:ubuntu
 ```
 
+If `TAURI_SIGNING_PRIVATE_KEY` is not set, the build script disables updater artifacts automatically so local Ubuntu builds still work.
+
 ## Output files
 
 - DEB: `src-tauri/target/release/bundle/deb/*.deb`
-- AppImage: `src-tauri/target/release/bundle/appimage/*.AppImage`
+- Executable: `src-tauri/target/release/openusage`
 
 ## Build executable only
 

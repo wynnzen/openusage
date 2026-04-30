@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "build:release": "./scripts/build-release.sh",
-    "build:ubuntu": "./scripts/build-release.sh --bundles deb,appimage",
+    "build:ubuntu": "./scripts/build-release.sh --bundles deb",
     "ccusage:bump": "node ./scripts/bump-ccusage-version.mjs",
     "bundle:plugins": "bun copy-bundled.cjs",
     "preview": "vite preview",

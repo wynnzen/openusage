@@ -109,7 +109,7 @@ Inspired by [CodexBar](https://github.com/steipete/CodexBar) by [@steipete](http
 - Build Ubuntu bundles: `bun run build:ubuntu`
 - Output:
   - `src-tauri/target/release/bundle/deb/*.deb`
-  - `src-tauri/target/release/bundle/appimage/*.AppImage`
+  - executable: `src-tauri/target/release/openusage`
 
 Full manual steps: [`docs/build-ubuntu-24.04.md`](docs/build-ubuntu-24.04.md)
 </details>
