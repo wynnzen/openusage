@@ -6,7 +6,7 @@ See your usage at a glance from your menu bar. No digging through dashboards.
 
 ## Download
 
-[**Download the latest release**](https://github.com/robinebers/openusage/releases/latest) (macOS, Apple Silicon & Intel)
+[**Download the latest release**](https://github.com/robinebers/openusage/releases/latest) (macOS, Apple Silicon & Intel; Ubuntu bundles available from source builds)
 
 The app auto-updates. Install once and you're set.
 
@@ -100,3 +100,16 @@ Inspired by [CodexBar](https://github.com/steipete/CodexBar) by [@steipete](http
 ### Stack
 
 ...
+
+### Ubuntu 24.04
+
+- Install system packages: `sudo apt update && sudo apt install -y build-essential libssl-dev pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev libayatana-appindicator3-dev libxdo-dev patchelf`
+- Install Bun: `npm install -g bun`
+- Install project deps: `bun install`
+- Build Ubuntu bundles: `bun run build:ubuntu`
+- Output:
+  - `src-tauri/target/release/bundle/deb/*.deb`
+  - executable: `src-tauri/target/release/openusage`
+
+Full manual steps: [`docs/build-ubuntu-24.04.md`](docs/build-ubuntu-24.04.md)
+</details>
