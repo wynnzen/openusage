@@ -23,4 +23,6 @@ bun tauri build "$@"
 
 echo ""
 echo "✓ Build complete! Output:"
-ls -la src-tauri/target/release/bundle/dmg/*.dmg 2>/dev/null || ls -la src-tauri/target/release/bundle/macos/*.app
+find src-tauri/target/release/bundle \
+  \( -name '*.dmg' -o -name '*.app' -o -name '*.deb' -o -name '*.AppImage' \) \
+  -print | sort
