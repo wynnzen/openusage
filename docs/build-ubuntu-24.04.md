@@ -24,7 +24,7 @@ npm install -g bun
 ## Build DEB
 
 ```bash
-cd /home/runner/work/openusage/openusage
+cd /path/to/openusage
 bun install
 bun run build:ubuntu
 ```
@@ -39,7 +39,7 @@ If `TAURI_SIGNING_PRIVATE_KEY` is not set, the build script disables updater art
 ## Build executable only
 
 ```bash
-cd /home/runner/work/openusage/openusage
+cd /path/to/openusage
 bun install
 bun run bundle:plugins
 bun run build
